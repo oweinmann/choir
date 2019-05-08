@@ -1,0 +1,36 @@
+.navbar {
+    margin-bottom: 0 !important;
+    margin-top: 0;
+    border-radius: 0;
+    background-color: #9fcdff; /* Header background color */
+    color: #1c7430; /* Heading text */
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+}
+.navbar-brand {
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: #111;
+    background-color: #1e7e34; /* Menu background */
+}
+.navbar-inverse .navbar-nav li a {
+    color: #721c24; /* Menu text */
+}
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+    /* height: 300px; /* only if you want fixed height */
+}
+.img-main {
+    padding-left: 0;
+    padding-right: 0;
+}
+.test-css {
+    color: darkred;
+    font-weight: bold;
+}
