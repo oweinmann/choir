@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-      window.onload = function(){
-        $.get("navBar.html", function(data){
+      window.onload = function() {
+        $.get("navBar.html", function(data) {
           $("#common-navbar").html(data);
           $('.navbar-nav').find('li:nth-child(3)')
                           .addClass('active')
@@ -19,19 +19,36 @@
 
 <body class="page-background">
 <div id="common-navbar"></div>
-<!--<div ng-include="'navBar.html'"></div>-->
 
 <div class="container">
     <div class="row">
         <div class="col-lg-2"></div>
+
         <div class="col-lg-8">
-            <div><h3>Upcoming Events</h3></div>
+            <div>
+                <h3>Upcoming Events</h3>
+            </div>
+
+            <div>
+                <span class="event-date">4th August 2019:</span>
+                <span class="event-heading">&nbsp Swiss National Day Family Picnic</span>
+                <br>
+                <span class="event-text">At the Austrian Club, 76-79 Sheehan Rd, Heidelberg West (Melways 19 F/8-9)</span>
+                <br>
+                <span class="event-text"><b>For further information see the Flyer <a href="files/SwissNationalDayPoster2019.pdf" target="_blank">here</a></b></span>
+            </div>
             <br>
 
-            <b>50 Years of The Swiss Choir Matterhorn (16th November 2019)</b>
+            <div>
+                <span class="event-date">16th November 2019:</span>
+                <span class="event-heading">&nbsp 50 Years Matterhorn Choir Celebration</span>
+                <br>
+                <span class="event-text">An evening of Swiss folkloristic entertainment at the Hungarian Community Centre, Wantirna</span>
+                <br>
+                <span class="event-text"><b>Watch out for further details here</b></span>
+            </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>
