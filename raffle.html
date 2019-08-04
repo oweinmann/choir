@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <title>Raffle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        $.get("navBar.html", function(data) {
+          $("#common-navbar").html(data);
+        });
+      }
+    </script>
+</head>
+
+<body class="page-background">
+<div id="common-navbar"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="col-lg-4"><h3>Raffle</h3></div>
+        </div>
+    </div>
+    <br>
+
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        More information coming soon
+    </div>
+</div>
+
+</body>
+</html>
