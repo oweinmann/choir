@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="">
-<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-	<title>News</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"><!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script type="text/javascript">
-      window.onload = function(){
-        $.get("navBar.html", function(data){
+<head>
+    <title>News</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        $.get("navBar.html", function(data) {
           $("#common-navbar").html(data);
           $('.navbar-nav').find('li:nth-child(4)')
                           .addClass('active')
@@ -12,36 +17,36 @@
         });
       }
     </script>
+
 </head>
+
 <body class="page-background">
 <div id="common-navbar"></div>
 <!--<div ng-include="'navBar.html'"></div>-->
 
 <div class="container">
-<div class="row">
-<div class="col-lg-2"></div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div><h3>News</h3></div>
+            <br>
+            <span class="event-date">The Swiss Yodel Choir Matterhorn is celebrating its 50th Anniversary this year!</span>
+            <br>
+            <br>
+            <span class="event-text">The main event will be an Evening of Swiss Entertainment at the Hungarian Community Centre, Wantirna
+                on 16th November 2019. <b>Please head to our <a href="events.html">Events</a> page to find out more about this special evening.</b></span>
+            <br>
+            <br>
 
-<div class="col-lg-8">
-<div>
-<h3>News</h3>
+            <span class="event-text">We will also hold a Raffle with a chance to win one of ten great prizes. The sale of Raffle Tickets
+                will open on 17 August and run until 16 November 2019. <b>Visit to our <a href="raffle.html">Raffle</a> page for information about prizes and how to purchase tickets.</b></span>
+            <br>
+            <br>
 
-<div><span class="event-date">The Swiss Yodel Choir Matterhorn is celebrating its 50th Anniversary this year! The main event will be </span><span class="event-text">an<br />
-Evening of Swiss Entertainment at the Hungarian Community Centre, Wantirna</span><span class="event-date"> on 16th November 2019.</span><br />
-<span class="event-text"><b>Please head to our Events page to find out more about this special evening.</b></span></div>
+            <div><span class="event-text">The Commemorative Booklet we have produced to for the occasion of the 50-Year Anniversary of the
+                Matterhorn Choir has now been completed. Printed copies of this booklet will be available at the 50 Years Matterhorn Celebration
+                Evening on 16 November. <b>You can download a pdf copy of this Booklet <a href="files/50_Years_Booklet.pdf" download="">here.</a></b></span></div>
+        </div>
 
-<div></div>
-
-<div><span class="event-text">We will also hold a Raffle with a chance to win one of ten great prizes. The sale of Raffle Tickets will open on 17 August and run until 16 November 2019.<br />
-<strong>Go to our Raffle page to find out more about the prizes and how to purchase tickets.</strong></span></div>
-
-<div></div>
-
-<div><span class="event-text">The Commemorative Booklet we have produced to for the occasion of the 50-Year Anniversary of the Matterhorn Choir has now been completed.<br />
-Printed copies of this booklet will be available at the 50 Years Matterhorn Celebration Evening on 16 November.<br />
-<strong>You can download a pdf copy of this Booklet here.</strong></span></div>
-</div>
-</div>
-</div>
-</div>
 </body>
 </html>
