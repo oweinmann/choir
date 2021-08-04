@@ -4,11 +4,22 @@
     <title>Contact Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        $.get("navBar.html", function(data) {
+          $("#common-navbar").html(data);
+          $('.navbar-nav').find('li:nth-child(7)')
+                          .addClass('active')
+                          .find('a').append('<span class="sr-only">(current)</span>');
+        });
+      }
+    </script>
 </head>
 
-<body>
-<div ng-include="'navBar.html'"></div>
+<body class="page-background">
+<div id="common-navbar"></div>
+<!--<div ng-include="'navBar.html'"></div>-->
 
 <div class="container">
     <div class="row">
@@ -32,7 +43,7 @@
         <div class="col-lg-8">
             <div class="col-lg-4"></div>
             <div class="col-lg-2">Email</div>
-            <div class="col-lg-2"><a href="mailto:ozrondo@gmail.com">ozrondo@gmail.com</a></div>
+            <div class="col-lg-2"><a href="mailto:ozrondo@gmail.com">ozrondo1@gmail.com</a></div>
         </div>
         <div class="col-lg-2"></div>
     </div>
@@ -40,9 +51,10 @@
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-            <div class="col-lg-4"><b>Choir Conductor:</b>Chris Hostettler</div>
+            <div class="col-lg-4"><b>Choir Conductor:</b> Chris Hostettler</div>
             <div class="col-lg-2">Phone</div>
-            <div class="col-lg-2">0400 427 434</div>
+            <div class="col-lg-2">03 9754 7390</div>
+            <div class="col-lg-2">0428 427 434</div>
         </div>
         <div class="col-lg-2"></div>
     </div>

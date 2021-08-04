@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="">
 <head>
-    <title>Useful links</title>
+	<title>Useful links</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        $.get("navBar.html", function(data){
+          $("#common-navbar").html(data);
+          $('.navbar-nav').find('li:nth-child(8)')
+                          .addClass('active')
+                          .find('a').append('<span class="sr-only">(current)</span>');
+        });
+      }
+    </script>
 </head>
 
-<body>
-<div ng-include="'navBar.html'"></div>
+<body class="page-background">
+<div id="common-navbar"></div>
+<!--<div ng-include="'navBar.html'"></div>-->
 
 <div class="container">
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <div><h3>Useful links</h3></div>
-            <br>
+<div class="row">
+<div class="col-lg-2"></div>
+<div class="col-lg-8">
+<div>
+<h3>Useful links</h3>
+</div>
+&nbsp;
 
-            <a href="https://www.myswitzerland.com/en-au/home.html">My Switzerland – information about Switzerland</a>
-            <br>
-            <br>
-            <a href="https://www.swisscommunity.org/">Site connecting the Swiss community living around the world</a>
-            <br>
-            <br>
-            <a href="https://swissclubvictoria.com/">The Swiss Club of Victoria</a>
-            <br>
-            <br>
-            <a href="https://www.swissinfo.ch/eng">Swiss information in English</a>
-            <br>
-            <br>
-            <a href="https://www.csa-oceania.org/">The organisation for the Swiss abroad</a>
-            <br>
-            <br>
-            <a href="https://www.revue.ch/ausgaben/2018/04/">The Swiss Review - a magazine created for Swiss living abroad</a>
-        </div>
-    </div>
+<ul>
+	<li><a href="https://www.myswitzerland.com/en-au/home.html">My Switzerland &ndash; information about Switzerland</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://www.swisscommunity.org/">Site connecting the Swiss community living around the world</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://swissclubvictoria.com/">The Swiss Club of Victoria</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://www.swissinfo.ch/eng">Swiss information in English</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://www.csa-oceania.org/">The Organisation of the Swiss Abroad (CSA Oceania)</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://www.revue.ch/ausgaben/2018/04/">The Swiss Review - a magazine created for Swiss living abroad</a></li>
+</ul>
+</div>
+</div>
 </div>
 </body>
 </html>

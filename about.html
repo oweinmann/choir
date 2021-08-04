@@ -4,11 +4,23 @@
     <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="js/bootstrap.js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        $.get("navBar.html", function(data){
+          $("#common-navbar").html(data);
+          $('.navbar-nav').find('li:nth-child(2)')
+                          .addClass('active')
+                          .find('a').append('<span class="sr-only">(current)</span>');
+        });
+      }
+    </script>
 </head>
 
-<body>
-<div ng-include="'navBar.html'"></div>
+<body class="page-background">
+<div id="common-navbar"></div>
+<!--<div ng-include="'navBar.html'"></div>-->
 
 <div class="container">
     <div class="row">
